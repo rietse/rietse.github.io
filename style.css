@@ -126,6 +126,13 @@ h2 {
     color: white;
 }
 
+@media only screen and (max-width: 350px) {
+    .row {
+        display: grid;
+        gap: 3px 3px;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     .links {
         display: flex;
