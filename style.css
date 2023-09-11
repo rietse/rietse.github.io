@@ -7,15 +7,67 @@ body {
     background-color: #FEEBFD;
 }
 
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
 #main {
-    width: 50%;
+    width: 60%;
     height: 125px;
     background: white;
     color: black;
-    overflow: auto;
+}
+
+#video {
+    width: 60%;
+    background-color: white;
+}
+
+.content {
+    width: 95%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-60%);
+    -ms-transform: translateY(-60%);
+    transform: translateY(-60%);
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about {
+    width: 40%;
+    padding: 20px;
+}
+
+.youtube-video {
+    aspect-ratio: 16 / 9;
+    width: 50%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.skill {
+    padding: 8px;
+    border: 1px solid #5b1635;
+    border-radius: 20px;
+    font-size: 13px;
+    margin: 5px;
 }
 
 .window {
+    position: relative;
     border: 1px solid white;
     border-image: url(border2.png);
     border-image-slice: 51 15 15 15;
@@ -24,13 +76,13 @@ body {
     box-shadow: 5px 7px #3f3f3f;
     font-family: w95fa;
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
 }
 
 .windowName {
     position: absolute;
-    top: 23px;
-    left: 37px;
+    top: -37px;
+    left: 4px;
     font-size: 23px;
     color: white;
 }
@@ -68,8 +120,9 @@ body {
 
 @media only screen and (max-width: 400px) {
     #main {
-        height: 225x;
+        height: 325px;
     }
+
     .links {
         display: flex;
         flex-direction: column;
@@ -77,9 +130,9 @@ body {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 400px) {
     #main {
-        height: 200px;
+        height: 225px;
     }
 }
 
@@ -87,7 +140,7 @@ body {
     #main {
         height: 175px;
     }
-} 
+}
 
 @media only screen and (min-width: 768px) {
     #main {
@@ -99,4 +152,4 @@ body {
     #main {
         height: 125px;
     }
-} 
+}
