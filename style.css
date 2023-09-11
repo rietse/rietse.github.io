@@ -5,6 +5,14 @@
 
 body {
     background-color: #FEEBFD;
+    background-image: url(lines.png);
+    background-repeat: repeat;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1 {
@@ -16,41 +24,40 @@ h2 {
 }
 
 #main {
-    width: 60%;
-    height: 125px;
+    width: 70%;
     background: white;
     color: black;
 }
 
 #video {
-    width: 60%;
+    width: 70%;
     background-color: white;
 }
 
 .content {
     width: 95%;
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-60%);
-    -ms-transform: translateY(-60%);
-    transform: translateY(-60%);
+}
+
+.content p {
+    padding: 5px;
 }
 
 .columns {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .about {
-    width: 40%;
-    padding: 20px;
+    width: 90%;
+    padding: 7px;
 }
 
 .youtube-video {
     aspect-ratio: 16 / 9;
-    width: 50%;
+    width: 90%;
 }
 
 .row {
@@ -119,10 +126,6 @@ h2 {
 }
 
 @media only screen and (max-width: 400px) {
-    #main {
-        height: 325px;
-    }
-
     .links {
         display: flex;
         flex-direction: column;
@@ -131,25 +134,25 @@ h2 {
 }
 
 @media only screen and (min-width: 400px) {
-    #main {
-        height: 225px;
-    }
 }
 
 @media only screen and (min-width: 600px) {
-    #main {
-        height: 175px;
-    }
 }
 
 @media only screen and (min-width: 768px) {
-    #main {
-        height: 150px;
+    .columns {
+        flex-direction: row;
+    }
+
+    .youtube-video {
+        width: 60%;
+    }
+
+    .about {
+        width: 40%;
+        padding: 20px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
-    #main {
-        height: 125px;
-    }
 }
