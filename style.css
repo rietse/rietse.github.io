@@ -207,11 +207,14 @@ h2 {
 .mainpic {
     width: 90%;
     aspect-ratio: 16 / 9;
+    border-style: inset;
 }
 
 .columnpic {
     width: 100%;
     aspect-ratio: 16 / 9;
+    border-style: inset;
+    margin-bottom: 5px;
 }
 
 @media only screen and (max-width: 350px) {
